@@ -16,7 +16,7 @@ You need to have **Go** and **PostgreSQL** installed on your system to run and b
 
 ```bash
 brew install go
-brew installl postgresql@18
+brew install postgresql@18
 brew services start postgresql@18
 ```
 
@@ -68,19 +68,19 @@ Gator requires a connection to a PostgreSQL database to store users and feeds.
 
 ### Usage
 
-| Command     | Description                                                    | Example Usage                |
-| :---------- | :------------------------------------------------------------- | :--------------------------- |
-| `register`  | Create a new user and log in automatically                     | `gator register <name>`      |
-| `login`     | Switches the current user                                      | `gator login <name>`         |
-| `users`     | Lists all of the registered users                              | `gator users`                |
-| `addfeed`   | Adds a new RSS feed to the database.                           | `gator addfeed <name> <url>` |
-| `feeds`     | Viev all available feeds                                       | `gator feeds`                |
-| `follow`    | Follows an existing feed in the system. (for the current user) | `gator follow <url>`         |
-| `unfollow`  | Unfollows a followed feed. (for the current user)              | `gator unfollow <url>`       |
-| `following` | List all followed feeds. (for the current user)                | `gator following`            |
-| `agg`       | Fetch posts from followed feed (e.g., 1m, 30s, 1h)             | `gator agg <time>`           |
-| `browse`    | Displays the latest fetched posts.                             | `gator browse limit 5`       |
-| `reset`     | Deletes all existing users and data                            | `gator reset`                |
+| Command     | Description                                                    | Example Usage                    |
+| :---------- | :------------------------------------------------------------- | :------------------------------- |
+| `register`  | Create a new user and log in automatically                     | `gator register <name>`          |
+| `login`     | Switches the current user                                      | `gator login <name>`             |
+| `users`     | Lists all of the registered users                              | `gator users`                    |
+| `addfeed`   | Adds a new RSS feed to the database.                           | `gator addfeed <name> <url>`     |
+| `feeds`     | View all available feeds                                       | `gator feeds`                    |
+| `follow`    | Follows an existing feed in the system. (for the current user) | `gator follow <url>`             |
+| `unfollow`  | Unfollows a followed feed. (for the current user)              | `gator unfollow <url>`           |
+| `following` | List all followed feeds. (for the current user)                | `gator following`                |
+| `agg`       | Fetch posts from followed feed (e.g., 1m, 30s, 1h)             | `gator agg <time>`               |
+| `browse`    | Displays the latest fetched posts.                             | `gator browse <limit by number>` |
+| `reset`     | Deletes all existing users and data                            | `gator reset`                    |
 
 ### Quick Start
 
